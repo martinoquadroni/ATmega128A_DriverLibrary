@@ -8,7 +8,12 @@
 #define SENSE_CONTROL ISC00 //ISCn0 - ISCn1 (n=0,1,2,3 "Asynchronous")
 //(n=4,5,6,7 "Synchronous" )
 
-void set_extint_register();
+/* 
+INT_Num : to choose between INT0 to INT7
+SCtype  : to choose between different sensing type
+*/ 
+
+void set_extint_register(int INT_Num, int SCtype);
 
 
  
